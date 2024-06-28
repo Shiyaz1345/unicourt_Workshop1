@@ -5,9 +5,9 @@ FROM node:10-alpine
 WORKDIR /app
 
 COPY . .
-
+ 
 # Install app dependencies
 RUN yarn install --production
 
 #ENTRYPOINT ["tail", "-f", "/dev/null"]
-CMD ["node", "/app/src/index.js"]
+CMD ["node", "/app/src/index.js"]docker run -dp 3000:3000 -v todo-db:/etc/todos docker-101
